@@ -40,7 +40,7 @@ jobs:
       run: terraform validate
 
     - name: Terraform Plan
-      run: terraform plan -out=tfplans
+      run: terraform plan -out=tfplan
 
     - name: Terraform Apply (only on push to main)
       if: github.ref == 'refs/heads/master' && github.event_name == 'push'
