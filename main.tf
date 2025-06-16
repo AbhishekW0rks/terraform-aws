@@ -1,7 +1,7 @@
 resource "aws_instance" "web" {
-  ami           = "ami-0c7217cdde317cfec"  # Amazon Linux 2 (us-east-1)
+  ami           = "ami-0c7217cdde317cfec" 
   instance_type = "t2.micro"
-  key_name      = "terraform-key"          # Use your .pem key name
+  key_name      = "terraform-key"
 
   user_data = <<-EOF
               #!/bin/bash
