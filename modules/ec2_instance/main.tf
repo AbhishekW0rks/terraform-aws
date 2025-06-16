@@ -1,7 +1,9 @@
-module "web_ec2" {
-  source        = "./modules/ec2_instance"
+resource "aws_instance" "web" {
   ami           = var.ami
   instance_type = var.instance_type
   key_name      = var.key_name
-  name_tag      = var.name_tag
+
+  tags = {
+    Name = var.name_tag
+  }
 }
