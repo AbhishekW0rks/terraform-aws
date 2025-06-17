@@ -1,15 +1,4 @@
-variable "ami" {
-  type = string
-}
-
-variable "instance_type" {
-  type = string
-}
-
-variable "key_name" {
-  type = string
-}
-
-variable "name_tag" {
-  type = string
-}
+variable "ami" {}
+variable "instance_type" {}
+variable "key_name" {}
+variable "name_tag" {}
