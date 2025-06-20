@@ -1,7 +1,7 @@
-module "web_ec2" {
-  source        = "./modules/ec2_instance"
-  ami           = var.ami
+module "ec2_instance" {
+  source = "./modules/ec2_instance"
+
+  instance_name = var.instance_name
   instance_type = var.instance_type
-  key_name      = var.key_name
-  name_tag      = var.name_tag
+  ami_id        = var.ami_id
 }
