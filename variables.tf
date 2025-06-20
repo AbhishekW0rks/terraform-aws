@@ -1,19 +1,15 @@
 variable "ami" {
-  type        = string
-  description = "AMI ID for EC2"
+  type = string
 }
 
 variable "instance_type" {
-  type        = string
-  description = "EC2 instance type"
+  type = string
 }
 
 variable "key_name" {
-  type        = string
-  description = "SSH key pair name"
+  type = string
 }
 
 variable "name_tag" {
-  type        = string
-  description = "Name tag for EC2 instance"
+  type = string
 }
