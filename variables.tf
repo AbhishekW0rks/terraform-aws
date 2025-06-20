@@ -1,15 +1,14 @@
-variable "ami" {
-  type = string
+variable "instance_name" {
+  description = "Name for the EC2 instance"
+  type        = string
 }
 
 variable "instance_type" {
-  type = string
+  description = "EC2 instance type"
+  type        = string
 }
 
-variable "key_name" {
-  type = string
-}
-
-variable "name_tag" {
-  type = string
+variable "ami_id" {
+  description = "AMI ID to launch"
+  type        = string
 }

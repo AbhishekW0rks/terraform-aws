@@ -1,4 +1,4 @@
-variable "ami" {
+variable "instance_name" {
   type = string
 }
 
@@ -6,10 +6,6 @@ variable "instance_type" {
   type = string
 }
 
-variable "key_name" {
-  type = string
-}
-
-variable "name_tag" {
+variable "ami_id" {
   type = string
 }

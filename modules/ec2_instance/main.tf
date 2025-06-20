@@ -1,9 +1,7 @@
-resource "aws_instance" "web" {
-  ami           = var.ami
+resource "aws_instance" "this" {
+  ami           = var.ami_id
   instance_type = var.instance_type
-  key_name      = var.key_name
-
   tags = {
-    Name = var.name_tag
+    Name = var.instance_name
   }
 }
